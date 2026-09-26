@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BETO | Men's Wear</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Tahoma,sans-serif;background:#fff;color:#111}
+a{text-decoration:none;color:inherit}.top{background:#0b0d0f;color:#fff;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.logo{font-size:34px;font-weight:900;font-style:italic;letter-spacing:2px}.logo small{display:block;font-size:9px;letter-spacing:5px;text-align:center}
+nav{display:flex;gap:28px;font-size:15px}nav a:hover{color:#aaa}
+.icons{display:flex;gap:18px;font-size:21px}
+.hero{min-height:500px;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;color:#fff;padding:50px 9%}
+.hero h1{font-size:82px;font-style:italic;letter-spacing:4px}.hero h2{font-size:21px;letter-spacing:7px;margin:-5px 0 20px}.hero p{font-size:25px;margin-bottom:25px}
+.btn{display:inline-block;background:#fff;color:#111;border:0;padding:14px 30px;border-radius:4px;font-weight:bold;cursor:pointer}.btn.dark{background:#111;color:#fff}
+.container{max-width:1200px;margin:auto;padding:38px 20px}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:15px}.cat{background:#f2f2f2;border-radius:7px;padding:18px;text-align:center;font-weight:bold}.cat .pic{height:100px;background:#ddd;border-radius:5px;margin-bottom:12px;background-size:cover;background-position:center}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin:25px 0 18px}.section-head h2{font-size:25px}
+.products{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.card{border:1px solid #e5e5e5;border-radius:7px;overflow:hidden;background:#fff;position:relative}.card img{width:100%;height:190px;object-fit:cover;background:#f4f4f4}.card .info{padding:12px}.card h3{font-size:15px;margin-bottom:8px}.price{font-weight:bold;margin-bottom:10px}.add{width:100%;padding:10px;background:#111;color:#fff;border:0;border-radius:4px;cursor:pointer}.add:hover{background:#333}
+.banner{background:#111;color:#fff;margin-top:35px;padding:55px 8%;display:flex;justify-content:space-between;align-items:center;background-image:linear-gradient(90deg,#111 35%,rgba(17,17,17,.25)),url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center}
+.banner h2{font-size:36px}.banner p{margin:10px 0 20px;color:#ddd}
+footer{background:#0b0d0f;color:#ddd;padding:45px 7%;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:35px}footer h3{color:#fff;margin-bottom:15px}.social{display:flex;gap:15px;margin-top:20px;font-size:20px}.contact p,footer li{margin:9px 0;list-style:none;color:#bbb}
+.news{display:flex;margin-top:12px}.news input{flex:1;padding:12px;border:1px solid #555;background:#111;color:#fff}.news button{padding:12px 18px}
+.copy{background:#070809;color:#777;text-align:center;padding:14px;font-size:12px}
+.cart{position:relative}.badge{position:absolute;background:#fff;color:#111;font-size:10px;border-radius:50%;padding:2px 5px;top:-8px;right:-10px}
+@media(max-width:900px){nav{display:none}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(3,1fr)}footer{grid-template-columns:1fr 1fr}.hero h1{font-size:58px}}
+@media(max-width:560px){.hero{min-height:430px;padding:35px 7%}.hero h1{font-size:48px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.card img{height:160px}.banner{display:block}footer{grid-template-columns:1fr}.logo{font-size:28px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="logo">BETO<small>MEN'S WEAR</small></div>
+  <nav><a href="#">الرئيسية</a><a href="#products">المنتجات</a><a href="#best">الأكثر مبيعاً</a><a href="#new">وصل حديثاً</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a></nav>
+  <div class="icons"><span>⌕</span><span>♙</span><span class="cart">🛒<b class="badge" id="count">0</b></span></div>
+</header>
+
+<section class="hero">
+ <div><h1>BETO</h1><h2>MEN'S WEAR</h2><p>ستايلك... هويتك</p><button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">تسوق الآن</button></div>
+</section>
+
+<main class="container">
+ <div class="categories">
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80')"></div>تيشيرتات</div>
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=500&q=80')"></div>بناطيل</div>
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80')"></div>هودي</div>
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=500&q=80')"></div>جاكيتات</div>
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=500&q=80')"></div>أطقم</div>
+  <div class="cat"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80')"></div>أحذية</div>
+ </div>
+
+ <div class="section-head" id="best"><h2>🔥 الأكثر مبيعاً</h2><a href="#products">عرض الكل ←</a></div>
+ <div class="products" id="products"></div>
+
+ <section class="banner" id="new"><div><h2>وصل حديثاً</h2><p>تصاميم جديدة... بإطلالة مختلفة</p><button class="btn">تسوق الآن</button></div><div><b>NEW<br>ARRIVALS</b></div></section>
+</main>
+
+<footer id="contact">
+ <div id="about"><div class="logo">BETO<small>MEN'S WEAR</small></div><p style="margin-top:15px">كل ما تحتاجه من ملابس شبابية بإطلالة عصرية وجودة عالية.</p><div class="social">f ◎ ♪ ▶</div></div>
+ <div><h3>روابط سريعة</h3><ul><li>الرئيسية</li><li>المنتجات</li><li>الأكثر مبيعاً</li><li>وصل حديثاً</li><li>من نحن</li></ul></div>
+ <div><h3>معلومات التواصل</h3><div class="contact"><p>☎ 010 1234 5678</p><p>✉ beto.store@gmail.com</p><p>⌖ القاهرة - مصر</p></div></div>
+ <div><h3>اشترك في القائمة البريدية</h3><p>احصل على أحدث العروض والمنتجات أولاً.</p><div class="news"><input placeholder="أدخل بريدك الإلكتروني"><button>➤</button></div></div>
+</footer>
+<div class="copy">© 2026 BETO. جميع الحقوق محفوظة.</div>
+
+<script>
+const products=[
+ ['تيشيرت قطن','350','https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80'],
+ ['هودي كاجوال','650','https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80'],
+ ['بنطلون كارغو','550','https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80'],
+ ['جاكيت شتوي','750','https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=700&q=80'],
+ ['سويت شيرت','500','https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80'],
+ ['حذاء كاجوال','1200','https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80']
+];
+let count=0;
+document.getElementById('products').innerHTML=products.map((p,i)=>`<article class="card"><img src="${p[2]}" alt="${p[0]}"><div class="info"><h3>${p[0]}</h3><div class="price">${p[1]} جنيه</div><button class="add" onclick="add()">🛒 أضف إلى السلة</button></div></article>`).join('');
+function add(){count++;document.getElementById('count').textContent=count;alert('تمت إضافة المنتج إلى السلة');}
+</script>
+</body>
+</html>
